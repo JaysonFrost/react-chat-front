@@ -1,0 +1,95 @@
+.userList
+	height: 100%
+	width: 30%
+	display: flex
+	flex-direction: column
+	border-right: 1px solid #EBEBEB
+	position: relative
+
+	.chatTitle
+		height: 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-bottom: 1px solid #EBEBEB
+		font-family: sans-serif
+		cursor: pointer
+
+	.list
+		width: 100%
+		overflow: scroll
+		max-height: 475px
+
+		ul
+			width: 100%
+
+			li
+				list-style: none
+				border-bottom: 1px solid #EBEBEB
+				cursor: pointer
+				display: flex
+				align-items: center
+				cursor: pointer
+				height: 70px
+				width: 100%
+
+				a
+					padding-left: 25px
+					text-decoration: none
+					display: flex
+					align-items: center
+					cursor: pointer
+					height: 70px
+					width: 100%
+
+					span
+						font-family: sans-serif
+						cursor: pointer
+
+		.userBlock
+			display: flex
+			flex-direction: column
+			position: relative
+			width: 100%
+
+			span
+				font-family: sans-serif
+				cursor: pointer
+
+			.preview
+				padding-top: 5px
+				font-weight: 300
+				font-size: 15px
+				color: #737373
+				overflow: hidden
+				text-overflow: ellipsis
+				width: 150px
+
+			.time
+				position: absolute
+				right: 15px
+				font-weight: 100
+				color: #d6d1d1
+				font-size: 15px
+				top: 13px
+
+	.regButton
+		background-color: #0884FF
+		position: absolute
+		color: #89ceffa6
+		text-transform: uppercase
+		position: absolute
+		width: 100%
+		bottom: 0
+		height: 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+
+		span
+			font-family: sans-serif
+			font-weight: 300
+			text-decoration: none !important
+			cursor: pointer
+			color: #FFFFFF

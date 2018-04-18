@@ -1,0 +1,92 @@
+.chat
+	display: flex
+	align-items: flex-end
+	width: 70%
+	position: relative
+
+	.title
+		height: 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-bottom: 1px solid #EBEBEB
+		font-family: sans-serif
+		position: absolute
+		top: 0
+		width: 100%
+
+	form
+		width: 100%
+		border-top: 1px solid #ebebeb
+
+		input
+			font-size: 15px
+			font-family: sans-serif
+			width: 95%
+			padding: 10px
+			height: 25px
+			border: 0
+			border-radius: 0
+
+		input:focus
+			outline: 0
+
+		input::placeholder
+			color: #00000030
+			border: 0
+
+		input::-webkit-input-placeholder
+			opacity: 1
+			transition: opacity 0.3s ease
+
+		input:focus::-webkit-input-placeholder
+			opacity: 0
+			transition: opacity 0.3s ease
+
+	.messages
+		bottom: 8%
+		position: absolute
+		max-width: 700px
+		overflow-y: scroll
+		overflow-x: unset
+		max-height: 490px
+		width: 100%
+
+		ul
+
+			li
+				border-radius: 3px
+				padding: 10px
+				display: block
+				margin-top: 10px
+				max-width: 680px
+				list-style: none
+
+				.message
+					max-width: 675px
+					display: block
+					word-wrap: break-word
+					font-family: sans-serif
+					line-height: 1.7
+					font-weight: 300
+
+					span
+						font-size: 20px
+						font-family: sans-serif
+						color: #2381CC
+						font-weight: 300
+
+					.you
+						font-size: 9px
+						margin-left: 3px
+
+	.arrow
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 13.5px 0 13.5px 25px
+		border-color: transparent transparent transparent #0983ffad
+		position: absolute
+		bottom: 8px
+		right: 10px
+		cursor: pointer
