@@ -1,9 +1,11 @@
 const autoprefixer = require('autoprefixer')
+const postcss = require('postcss-nested')
 
 module.exports = ({ file }) => ({
 	loader: require.resolve('postcss-loader'),
 	parser: file.extname === '.sss' ? 'sugarss' : false,
 	plugins: [
+		postcss,
 		autoprefixer({
 			browsers: [
 				'>1%',
